@@ -6,8 +6,8 @@ require('dotenv').config();
 
 const app = express();
 
-const movieRoutes = require('./routes/movie');
-const userRoutes = require('./routes/user');
+const movieRoutes = require('./src/routes/movie');
+const userRoutes = require('./src/routes/user');
 
 app.use(bodyParser.json());
 const cors = require('cors');
