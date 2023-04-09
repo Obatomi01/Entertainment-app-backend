@@ -15,6 +15,8 @@ const cors = require('cors');
 
 app.use(cors());
 
+app.use(express.static(path.join(__dirname, 'build')));
+
 app.use(movieRoutes);
 app.use(userRoutes);
 
