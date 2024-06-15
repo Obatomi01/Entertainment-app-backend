@@ -213,3 +213,11 @@ exports.getMovieSummary = (req, res, next) => {
       console.log(err);
     });
 };
+
+exports.getAllMovies = async (req, res) => {
+  const movies = await Movie.find();
+
+  req.json({
+    message: 'fetched successfully',
+  });
+};

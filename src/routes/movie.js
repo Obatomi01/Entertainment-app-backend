@@ -5,6 +5,7 @@ const router = express.Router();
 const movieControllers = require('../controllers/movie');
 
 router.get('/movies', movieControllers.getMovies);
+router.get('/all-movies', movieControllers.getAllMovies);
 
 router.post('/movies/bookmark', movieControllers.bookmarkMovie);
 
