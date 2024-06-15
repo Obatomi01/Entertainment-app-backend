@@ -217,7 +217,7 @@ exports.getMovieSummary = (req, res, next) => {
 exports.getAllMovies = async (req, res) => {
   const movies = await Movie.find();
 
-  req.json({
+  res.json({
     message: 'fetched successfully',
   });
 };
