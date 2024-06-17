@@ -221,3 +221,13 @@ exports.getAllMovies = async (req, res) => {
     message: 'fetched successfully',
   });
 };
+
+exports.revalidateCronJob = async (req, res) => {
+  try {
+    res.json({
+      message: 'Fetched successfully',
+    });
+  } catch (err) {
+    console.log(err);
+  }
+};
