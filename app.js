@@ -10,6 +10,15 @@ const app = express();
 const movieRoutes = require('./src/routes/movie');
 const userRoutes = require('./src/routes/user');
 
+app.get('/', (req, res) => {
+  try {
+    res.json({
+      message: 'Fetched successfully',
+    });
+  } catch (err) {
+    console.log(err);
+  }
+});
 app.use(bodyParser.json());
 const cors = require('cors');
 
