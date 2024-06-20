@@ -45,9 +45,11 @@ mongoose
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then((result) => {
-    app.listen(PORT);
-    console.log('');
+    app.listen(8080);
+    console.log('connected');
   })
   .then((err) => {
     console.log(err);
   });
+
+module.exports = app;
